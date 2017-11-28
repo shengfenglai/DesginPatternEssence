@@ -10,35 +10,32 @@ public class PersonBuilder implements Builder {
 
     private Person person;
 
-    @Override
+    public PersonBuilder(){
+        person = new Person();
+    }
+
     public Builder withHead(String head) {
         person.addHead(head);
         return this;
     }
 
-    @Override
     public Builder withHand(String hand) {
         person.addHand(hand);
         return this;
     }
 
-    @Override
     public Builder withLeg(String leg) {
         person.addLeg(leg);
         return this;
     }
 
-    @Override
     public Builder withBody(String body) {
         person.addBody(body);
         return this;
     }
 
-    @Override
-    public void build() {
-        PersonBuilder personBuilder = new PersonBuilder();
-
+    public Person build() {
+        return person;
     }
-
 
 }

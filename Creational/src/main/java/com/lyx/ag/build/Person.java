@@ -28,4 +28,8 @@ public class Person {
     public void addBody(String body){
         this.body = body;
     }
+
+    public String toString(){
+        return "Person head " + head;
+    }
 }

@@ -21,6 +21,6 @@ public interface Builder {
     Builder withBody(String body);
 
     //构建
-    void build();
+    Person build();
 
 }
