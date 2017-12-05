@@ -1,11 +1,11 @@
-package com.lyx.ag.build;
+package Build;
 
 /**
  * @User: liyixiang
  * @Date: 2017/11/28
  * @TODO:
  *      人体构造器
-*/
+ */
 public class PersonBuilder implements Builder {
 
     private Person person;

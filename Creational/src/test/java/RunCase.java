@@ -1,7 +1,9 @@
-package com.lyx.ag.build;
+import Build.Builder;
+import Build.Person;
+import Build.PersonBuilder;
 
 /**
- * Created by liyixiang on 2017/11/28.
+ * Created by liyixiang on 2017/12/5.
  */
 public class RunCase {
 
@@ -15,5 +17,4 @@ public class RunCase {
         System.out.println(person.toString());
 
     }
-
 }

@@ -1,11 +1,11 @@
-package com.lyx.ag.build;
+package Build;
 
 /**
  * @User: liyixiang
  * @Date: 2017/11/28
  * @TODO:
  *      建造者模式
-*/
+ */
 public interface Builder {
 
     //头
