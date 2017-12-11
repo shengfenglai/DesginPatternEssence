@@ -1,7 +1,5 @@
 package SingleTon;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 /**
  * @User: liyixiang
  * @Date: 2017/11/28
