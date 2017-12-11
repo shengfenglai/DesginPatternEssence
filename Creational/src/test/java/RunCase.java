@@ -24,7 +24,7 @@ public class RunCase {
         //单例模式测试
         SingleTon4Static.getInstance();
         SingleTon4DoubleCheck.getInstance();
-        SingleTon4Enum.INSTANCE.getInstance();
+        SingleTon4Enum.getInstance();
     }
 
 }

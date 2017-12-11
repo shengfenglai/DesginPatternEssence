@@ -6,28 +6,25 @@ package SingleTon;
  * @TODO:
  *      单例模型-枚举法
  */
-public enum SingleTon4Enum {
-    INSTANCE;
+public class SingleTon4Enum{
 
-    private SingleTon singleTon;
-    //构造方法私有
-    private SingleTon4Enum(){
-        singleTon = new SingleTon();
+    private SingleTon4Enum(){}
+
+    public static SingleTon4Enum getInstance(){
+        return Singleton.INSTANCE.getInstance();
     }
 
-    public SingleTon getInstance(){
-        return singleTon;
+    private enum Singleton{
+        INSTANCE;
+
+        private SingleTon4Enum singleton;
+        //JVM会保证此方法绝对只调用一次
+        Singleton(){
+            singleton = new SingleTon4Enum();
+        }
+        public SingleTon4Enum getInstance(){
+            return singleton;
+        }
     }
-
-}
-
-/**
- * @User: liyixiang
- * @Date: 2017/12/11
- * @TODO:
- *   需要被单例的类
-*/
-class SingleTon {
-
 }
 
