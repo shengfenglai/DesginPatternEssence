@@ -26,7 +26,7 @@ public class RunCase {
         //单例模式测试
         SingleTon4Static.getInstance();
         SingleTon4DoubleCheck.getInstance();
-        SingleTon4Enum.INSTANCE.add();
+        //SingleTon4Enum.INSTANCE;
 
         //反射突破测试
         try {
@@ -73,5 +73,8 @@ public class RunCase {
         }
 
     }
+
+
+
 
 }

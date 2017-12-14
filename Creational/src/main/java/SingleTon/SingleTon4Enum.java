@@ -9,10 +9,6 @@ package SingleTon;
 public enum SingleTon4Enum {
     INSTANCE;
 
-    public static void add(){
-
-    }
-
     // 不添加该方法则会出现反序列化时出现多个实例的问题
     public Object readResolve() {
         return INSTANCE;

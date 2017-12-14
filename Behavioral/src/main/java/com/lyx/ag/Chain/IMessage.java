@@ -1,4 +1,4 @@
-package Chain;
+package com.lyx.ag.Chain;
 
 import lombok.Data;
 import lombok.ToString;
