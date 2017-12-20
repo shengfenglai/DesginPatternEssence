@@ -5,6 +5,8 @@ import com.lyx.ag.Chain.InitChain;
 import com.lyx.ag.Strategy.EnumStrategy;
 import com.lyx.ag.Strategy.Strategy;
 import com.lyx.ag.Strategy.StrategyFactory;
+import com.lyx.ag.Template.HttpTemplate;
+import com.lyx.ag.Template.Template;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -36,6 +38,12 @@ public class RunCase {
         StrategyFactory strategyFactory = (StrategyFactory)ac.getBean("strategyFactory");
         Strategy strategy =strategyFactory.getStrategy(EnumStrategy.AStrategy);
         strategy.calculate(EnumStrategy.AStrategy.getDesc());
+    }
+
+    @Test
+    public void testTemplate() throws Exception {
+        Template template = new HttpTemplate();
+        template.process("aaa");
     }
 
 }
